@@ -1,0 +1,6 @@
+# Configurações do VS Code
+.vscode/
+
+# Arquivos temporários do sistema
+*.log
+*.tmp

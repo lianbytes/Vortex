@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-background: #111;
+    --primary: #ccc;
+    --secundary: #fff;
+    --tertiary: #333;
+    --quaternary: #111;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: var(--header-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header .logo{
+    font-size: 36px;
+    color: var(--primary);
+}
+
+header nav ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+
+header nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav a:hover{
+    color: var(--secundary);
+    background-color: var(--tertiary);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #333 0.5;
+}
+
+section.Destaques{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Destaques img {
+    max-width: 100%;
+}
+
+section.Ciclos{
+    width: 80%;
+    margin: 50px auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section.Ciclos .itens-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+section.Ciclos .item{
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary);
+}
+
+.item img {
+    max-width: 100%;
+}
+
+section.Contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section.Contato .form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.Contato .form a:hover{
+    background-color: var(--tertiary);
+    color: var(--primary);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px #333 0.5;
+}
+
+.form input, .form textarea{
+    border: 1px solid black;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+.form a{
+    text-decoration: none;
+    background-color: var(--quaternary);
+    color: var(--primary);
+    padding: 10px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: var(--header-background);
+    color: var(--primary);
+    align-items: center;
+    margin-top: 50px;
+}
